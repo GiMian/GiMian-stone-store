@@ -26,11 +26,13 @@
 </template>
 <style>
 .footer {
-  width: 100%;
-  height: 20px;
+  height: 100%;
   background-color: aquamarine;
+  display: flex;
+  align-items: center;
 }
-.el-row {
+.footer .el-row {
   margin-bottom: 0;
+  width: 100%;
 }
 </style>

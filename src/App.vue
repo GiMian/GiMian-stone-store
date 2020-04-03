@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <div id="nav">
-      <!-- <font-awesome-icon icon="search" />
+    <el-container>
+      <el-header>
+        <Header></Header>
+      </el-header>
+      <el-main>
+        <div class="body">
+          <!-- <font-awesome-icon icon="search" />
       <router-link to="/">Gioi thieu</router-link> |
-      <router-link to="/about">About</router-link> -->
-    </div>
-    <!-- <router-view/> -->
-    <Footer></Footer>
+          <router-link to="/about">About</router-link>-->
+          <!-- <Home></Home> -->
+          <router-view></router-view>
+        </div>
+      </el-main>
+      <el-footer>
+        <Footer></Footer>
+      </el-footer>
+    </el-container>
   </div>
 </template>
 
 <style>
-body{
+body {
   margin: 0;
 }
 
@@ -24,18 +33,7 @@ body{
   color: #2c3e50;
 }
 
-#nav {
+.body {
   height: 1500px;
-  margin: auto;
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

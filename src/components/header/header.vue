@@ -10,10 +10,10 @@
         </a>
       </el-col>
       <el-col :span="2" :offset="13">
-        <a href="#">Gioi thieu</a>
+        <router-link to="/">Gioi thieu</router-link>
       </el-col>
       <el-col :span="2">
-        <a href="#">Tin tuc</a>
+        <router-link to="/about">About</router-link>
       </el-col>
       <el-col :span="2">
         <a href="#">Lien he</a>
@@ -29,12 +29,11 @@ a {
   text-decoration: none;
 }
 .header {
-  width: 100%;
+  left: 20px;
+  right: 20px;
   position: fixed;
-  padding: 10px 0 10px 0;
+  padding: 10px 20px;
   background-color: aquamarine;
-}
-.el-row {
-  margin-bottom: 0;
+  z-index: 99;
 }
 </style>
